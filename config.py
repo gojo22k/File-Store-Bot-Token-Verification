@@ -18,8 +18,8 @@ DB_NAME = os.environ.get("DATABASE_NAME", "Aniflix")
 
 #Shortner (token system) 
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "vnshortener.com")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "5c893e2544bc73f7eccb80a4568810ef71dea281")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "ziplinker.net")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "81aa9734c37474fbc63b3dcb719eaf14ecd8f27f")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 86000)) # Add time in seconds
 IS_VERIFY = os.environ.get("IS_VERIFY", "True")
 TUT_VID = os.environ.get("TUT_VID", "https://t.me/How_to_Download_7x/35") 
