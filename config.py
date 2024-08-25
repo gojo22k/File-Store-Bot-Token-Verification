@@ -10,7 +10,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002221437806"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1740287480"))
-PORT = os.environ.get("PORT", "8000")
+PORT = os.environ.get("PORT", "8030")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Aniflix:Lipun123@aniflix.q2wina5.mongodb.net/?retryWrites=true&w=majority&appName=Aniflix")
