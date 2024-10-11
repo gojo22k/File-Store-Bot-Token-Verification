@@ -3,10 +3,10 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7393513769:AAGq3Ur1HJaYRJx-fro3kM3Ei26AOZMYauU")
 APP_ID = int(os.environ.get("APP_ID", "25198711"))
 API_HASH = os.environ.get("API_HASH", "2a99a1375e26295626c04b4606f72752")
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002151954601"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002221437806"))
 
 #OWNER ID
 OWNER_ID = int(os.environ.get("OWNER_ID", "1740287480"))
@@ -14,14 +14,14 @@ PORT = os.environ.get("PORT", "8030")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Aniflix:Lipun123@aniflix.q2wina5.mongodb.net/?retryWrites=true&w=majority&appName=Aniflix")
-DB_NAME = os.environ.get("DATABASE_NAME", "Aniflix")
+DB_NAME = os.environ.get("DATABASE_NAME", "Hold")
 
 #Shortner (token system) 
 
-SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "ziplinker.net")
-SHORTLINK_API = os.environ.get("SHORTLINK_API", "81aa9734c37474fbc63b3dcb719eaf14ecd8f27f")
+SHORTLINK_URL = os.environ.get("SHORTLINK_URL", "")
+SHORTLINK_API = os.environ.get("SHORTLINK_API", "")
 VERIFY_EXPIRE = int(os.environ.get('VERIFY_EXPIRE', 36000)) # Add time in seconds
-IS_VERIFY = os.environ.get("IS_VERIFY", "True")
+IS_VERIFY = os.environ.get("IS_VERIFY", "False")
 TUT_VID = os.environ.get("TUT_VID", "https://t.me/How_to_Download_7x/35") 
 
 #force sub channel id, if you want enable force sub
@@ -30,10 +30,10 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002221437806"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}, Thanks for using me :D @team_netflix ⚡️.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}, Thanks for using me :D @Aniflix_Official ⚡️.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1740287480 7202892465").split()):
+    for x in (os.environ.get("ADMINS", "1740287480").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
